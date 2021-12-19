@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Login / Sign Up Form</title>
+    <link rel="stylesheet" href="CSS/css.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="max2">
+        <div class="rowww">
+            <div class="profile">
+                <img class="imgp" src="/IMAGES/pngfind.com-privacy-icon-png-4703547.png" width="20%" alt="user">
+                <div class="textp">
+                    <h3 id="nomUsuari"></h3>
+                    <h3>20</h3>
+                    <h3>UPC</h3>
+                </div>
+            </div>
+            <div>
+                <h1 id="prueba" class="h1falso">The perfect platform for managing your tasks,marks and organizing yourself
+                </h1>
+            </div>
+        </div>
+
+        <div class="resto2">
+            <div>
+                <nav class="menu2">
+                    <h2> <a id="meVoy" href="">Exit</a> </h1>
+                        <h2> <a href="">Contact</a> </h1>
+                            <h2> <a href="">Create Account</a> </h1>
+                                <h2> <a href="">My Account</a> </h1>
+                </nav>
+            </div>
+
+            <div class="contenidoT">
+                <div class="first">
+                    <div class="containertasks">
+                        <form class="form" id="login">
+                            <h1 class="form__title">Tasks</h1>
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <p>
+                                    <select name="Subject" id="task-subj" class="form__input">
+                                        <option value="Subject">Subject</option>
+                                        <option value="PBE">PBE</option>
+                                        <option value="RP">RP</option>
+                                        <option value="IPAV">IPAV</option>
+                                        <option value="SO">SO</option>
+                                        <option value="DSBM">DSBM</option>
+                                        <option value="EDA">EDA</option>
+                                        <option value="PSAC">PSAVC</option>
+                                        <option value="TD">TD</option>
+                                        <option value="FISE">FISE</option>
+                                        <option value="CI">CI</option>
+                                    </select>
+                                </p>
+                                <input type="text" id="task-name" class="form__input" autofocus placeholder="Name">
+                                <p>
+                                    <input type="date" id="task-date" class="form__input" class="dated" autofocus>
+                                </p>
+
+
+                                <div class="gropuequal2">
+                                    <div>
+                                        <input type="radio" id="equalst" name="drone" value="=">
+                                        <label for="equals">=</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="lowert" name="drone" value="[lt]">
+                                        <label for="lower"><</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="greatert" name="drone" value="[gte]">
+                                        <label for="greater">>=</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="NoMarkst" name="drone" value="no">
+                                        <label for="NoMarks">Nothing</label>
+                                    </div>
+                                </div>
+                                <p>Limit?
+                                    <input type="number" id="lim-t" name="drone" value="0">
+
+                                </p>
+                            </div>
+                            <button class="form__button" id="cont-tasks" type="submit">Continue</button>
+                        </form>
+                        <script src="./inicio.js"></script>
+
+                    </div>
+
+                    <div class="containermarks">
+                        <form class="form" id="login">
+                            <h1 class="form__title">Marks</h1>
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <p>
+                                    <select name="Subject" id="subject-mark" class="form__input">
+                                        <option value="Subject">Subject</option>
+                                        <option value="PBE">PBE</option>
+                                        <option value="RP">RP</option>
+                                        <option value="IPAV">IPAV</option>
+                                        <option value="SO">SO</option>
+                                        <option value="DSBM">DSBM</option>
+                                        <option value="EDA">EDA</option>
+                                        <option value="PSAC">PSAVC</option>
+                                        <option value="TD">TD</option>
+                                        <option value="FISE">FISE</option>
+                                        <option value="CI">CI</option>
+                                    </select>
+                                </p>
+
+                                <input type="text" id="name-mark" class="form__input" autofocus placeholder="Name">
+                                <p> Mark:
+                                    <input type="range" id="mark-slider" class="form__input" autofocus min="0" max="100" value="0">
+                                    <p id="result-mark"></p>
+                                </p>
+
+                                <div class="gropuequal">
+                                    <div>
+                                        <input type="radio" id="equals" name="drone" value="=">
+                                        <label for="equals">=</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="lower" name="drone" value="[lt]">
+                                        <label for="lower"><</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="greater" name="drone" value="[gte]">
+                                        <label for="greater">>=</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="NoMarks" name="drone" value="no">
+                                        <label for="NoMarks">Nothing</label>
+                                    </div>
+                                </div>
+                                <p>Limit?
+                                    <input type="number" id="lim-m" name="drone" value="0">
+
+                                </p>
+
+                            </div>
+                            <button class="form__button" id="cont-marks" type="submit">Continue</button>
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="conttim">
+
+                    <div class="containertime">
+                        <form class="form" id="login">
+                            <h1 class="form__title">Timetables</h1>
+                            <div class="form__message form__message--error"></div>
+                            <div class="form__input-group">
+                                <p>
+                                    <select name="Subject" id="dayt" class="form__input">
+                                        <option value="Day">Day</option>
+                                        <option value="Mon">Mon</option>
+                                        <option value="Tue">Tue</option>
+                                        <option value="Wed">Wed</option>
+                                        <option value="Thu">Thu</option>
+                                        <option value="Fri">Fri</option>
+                                        
+                                    </select>
+                                </p>
+                                <select name="Subject" id="subject-time" class="form__input">
+                                    <option value="Subject">Subject</option>
+                                    <option value="PBE">PBE</option>
+                                    <option value="RP">RP</option>
+                                    <option value="IPAV">IPAV</option>
+                                    <option value="SO">SO</option>
+                                    <option value="DSBM">DSBM</option>
+                                    <option value="EDA">EDA</option>
+                                    <option value="PSAC">PSAVC</option>
+                                    <option value="TD">TD</option>
+                                    <option value="FISE">FISE</option>
+                                    <option value="CI">CI</option>
+                                </select>
+                                <p>
+                                    <input type="text" id="time-class" class="form__input" autofocus placeholder="Room">
+
+                                </p>
+
+                                <input type="time" id="time-hour" class="form__input" class="dated" autofocus>
+
+                                <div class="gropuequal2">
+                                    <div>
+                                        <input type="radio" id="equalse" name="drone" value="=">
+                                        <label for="equals">=</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="lowere" name="drone" value="[lt]">
+                                        <label for="lower"><</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="radio" id="greatere" name="drone" value="[gte]">
+                                        <label for="greater">>=</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" id="NoMarkse" name="drone" value="no">
+                                        <label for="NoMarks">Nothing</label>
+                                    </div>
+                                </div>
+
+                                <p>Limit?
+                                    <input type="number" id="lim-e" name="drone" value="0">
+
+                                </p>
+
+                            </div>
+                            <button class="form__button" id="cont-timetables" type="submit">Continue</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="table">
+                    <table>
+                        <thead id="primeraFila">
+
+                        </thead>
+                        <tbody id="cosTaula">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./account.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,418 @@
+:root {
+    /*Declarem algunes variables:*/
+    --color-primary: #009579;
+    --color-primary-dark: #007f67;
+    --color-secondary: #252c6a;
+    --color-error: #e61515;
+    --color-success: #4bb544;
+    --border-radius: 4px;
+    --primario: #9c27b0;
+    --primariooscuro: #89119d;
+    --secundario: #ffce00;
+    --blanco: #ffffff;
+    --negro: #000;
+    --fuente: 'Poppins', cursive;
+}
+
+body {
+    background: var(--color-primary);
+    font-size: 18px;
+    font: 300 1rem 'Quicksand', sans-serif;
+    margin: 0rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.max {
+    margin-top: 0rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.colu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    grid-row: 1/3;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.4);
+    margin: 0rem;
+    height: 100vh;
+}
+
+.errorm {
+    background-color: red;
+    width: 80%;
+    margin: 2.3rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.4rem;
+}
+
+.errormsg {
+    font: 300 1rem 'Quicksand', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.header {
+    color: #000000;
+    text-align: center;
+}
+
+.content {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.resto {
+    grid-column: 2/5;
+    grid-row: 1/3;
+    margin-top: 0rem;
+    width: 100%;
+    height: 100%;
+    background-image: url(/IMAGES/5a30a30fd3f747.9407878015131369118682.png);
+    background-size: cover;
+}
+
+.menu {
+    color: white;
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.comment {
+    text-align: center;
+    margin: 2rem;
+    margin-top: 4rem;
+    font-size: 1rem;
+}
+
+.container {
+    font-family: var(--fuente);
+    margin: 1rem;
+    /*X rem = X vegades el font-size (1 --> 18Px)*/
+    padding: 2rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'Quicksand', sans-serif;
+}
+
+.form--hidden {
+    /*Per quan hem d'amagar el login*/
+    display: none;
+}
+
+.form>*:first-child {
+    /* first child és el h1 --> Titol: Login ; volem eliminar l'espai extra que hi ha pel titol*/
+    margin-top: 0;
+}
+
+.form>*:last-child {
+    /* last child és el p (paragraph tag) --> No tens compte? */
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    /*Personalitzem l'efecte de quan ens posem a dins el text input*/
+    border-color: var(--color-primary);
+    background: #ffffff
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form__button:hover {
+    /* estilitzat de quan posem el cursor a sobre el boto*/
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    /*Estilitzat de quan apretem el botó*/
+    transform: scale(0.98);
+    /*Quan es clica es redueix el tamany en un 2%*/
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    /*Estilitzat de quan posem cursos sobre els links*/
+    text-decoration: underline;
+}
+
+
+/*Account*/
+
+table,
+th,
+td {
+    border: 1px transparent;
+    font-weight: bold;
+}
+
+td:first-child,
+th:first-child {
+    margin-bottom: 2rem;
+}
+
+td:last-child,
+th:last-child {
+    margin-bottom: 2rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0 15px;
+    border-radius: 2rem;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    background-color: rgba(116, 221, 163, 0.7);
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.4);
+}
+
+.table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-spacing: 0 15px;
+}
+
+th {
+    text-align: center;
+    padding: 7rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: black;
+    font-size: 1.3rem;
+}
+
+td {
+    margin: 0rem;
+    padding: 1.6rem;
+}
+
+tbody tr:nth-child(odd) {
+    text-align: center;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+    background-color: #4C8BF5;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    text-align: center;
+    box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.6);
+    color: white;
+    background-color: orange;
+}
+
+.max2 {
+    margin-top: 0rem;
+    margin: 0rem;
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    height: 100vh;
+}
+
+.rowww {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    grid-row: 1/2;
+    margin: 0rem;
+    width: 100%;
+}
+
+.resto2 {
+    grid-row: 2/6;
+    margin-top: 0rem;
+    height: 100vh;
+    margin: 0;
+    background-image: url(/IMAGES/5a30a30fd3f747.9407878015131369118682.png);
+    background-size: 100%;
+    height: 100vmax
+}
+
+.menu2 {
+    color: white;
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+h2 {
+    font-size: 0.8rem;
+}
+
+.h1falso {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 6rem;
+    margin-right: 2rem;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3 {
+    margin: 0.3rem;
+    font-size: 1rem;
+}
+
+.textp {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.imgp {
+    margin: 2rem;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.containermarks {
+    margin: 1rem;
+    /*X rem = X vegades el font-size (1 --> 18Px)*/
+    padding: 2rem;
+    margin-left: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff
+}
+
+.containertasks {
+    margin: 1rem;
+    /*X rem = X vegades el font-size (1 --> 18Px)*/
+    margin-right: 5rem;
+    padding: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: 3rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.conttim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.containertime {
+    margin: 0rem;
+    /*X rem = X vegades el font-size (1 --> 18Px)*/
+    padding: 2rem;
+    width: 30%;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff
+}
+
+.gropuequal2 {
+    margin-top: 2.4rem;
+    margin-bottom: 0.4rem;
+}
