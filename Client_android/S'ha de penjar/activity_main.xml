@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88FCFC"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="247dp"
+            android:layout_height="108dp"
+            android:text="Welcome to Course Manager"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.367" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:background="@color/black"
+            android:text="LOGIN"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.865" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="247dp"
+            android:layout_height="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.162"
+            app:srcCompat="@drawable/calendari" />
+
+        <EditText
+            android:id="@+id/host"
+            android:layout_width="247dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:hint="host:port/path"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="247dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:hint="username"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.566" />
+
+        <EditText
+            android:id="@+id/uid"
+            android:layout_width="247dp"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:hint="uid password"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A9A9"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.631" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
